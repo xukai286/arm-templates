@@ -46,14 +46,11 @@
                 },
                 "storageProfile": {
                     "imageReference": {
-                        "publisher": "Canonical",
-                        "offer": "UbuntuServer",
-                        "sku": "16.04-LTS",
-                        "version": "latest"
+                        "id": "[resourceId('Microsoft.Compute/images','mc-node')]"
                     },
                     "osDisk": {
                         "osType": "Linux",
-                        "name": "[concat(parameters('virtualMachines_mc_1_name'),'_OsDisk_1_kaix1')]",
+                        "name": "[concat(parameters('virtualMachines_mc_1_name'),'_OsDisk_1',guid(resourceGroup().id))]",
                         "createOption": "FromImage",
                         "caching": "ReadWrite",
                         "managedDisk": {
@@ -62,6 +59,7 @@
                     },
                     "dataDisks": []
                 },
+                
                 "osProfile": {
                     "computerName": "[parameters('virtualMachines_mc_1_name')]",
                     "adminUsername": "kaix",
