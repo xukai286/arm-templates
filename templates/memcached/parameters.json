@@ -1,0 +1,63 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "virtualMachines_mc_1_name": {
+            "value": null
+        },
+        "virtualMachines_mc_2_name": {
+            "value": null
+        },
+        "virtualMachines_mc_3_name": {
+            "value": null
+        },
+        "virtualNetworks_mc_vnet_name": {
+            "value": null
+        },
+        "networkInterfaces_mc_1354_name": {
+            "value": null
+        },
+        "networkInterfaces_mc_2780_name": {
+            "value": null
+        },
+        "networkInterfaces_mc_3806_name": {
+            "value": null
+        },
+        "publicIPAddresses_mc_1_ip_name": {
+            "value": null
+        },
+        "publicIPAddresses_mc_2_ip_name": {
+            "value": null
+        },
+        "publicIPAddresses_mc_3_ip_name": {
+            "value": null
+        },
+        "networkSecurityGroups_mc_nsg_name": {
+            "value": null
+        },
+        "subnets_default_name": {
+            "value": null
+        },
+        "securityRules_Port_8500_name": {
+            "value": null
+        },
+        "securityRules_Port_11211_name": {
+            "value": null
+        },
+        "securityRules_Port_11311_name": {
+            "value": null
+        },
+        "securityRules_default_allow_ssh_name": {
+            "value": null
+        },
+        "virtualMachines_mc_1_id": {
+            "value": null
+        },
+        "virtualMachines_mc_2_id": {
+            "value": null
+        },
+        "virtualMachines_mc_3_id": {
+            "value": null
+        }
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "southeastasia"
+        },
+        "virtualMachineName": {
+            "value": "oel74-m1"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_DS1_v2"
+        },
+        "virtualNetworkName": {
+            "value": "specializedVMVNET"
+        },
+        "networkInterfaceName": {
+            "value": "oel74-m1406"
+        },
+        "networkSecurityGroupName": {
+            "value": "oel74-m1-nsg"
+        },
+        "diagnosticsStorageAccountName": {
+            "value": "rg1diag500"
+        },
+        "diagnosticsStorageAccountId": {
+            "value": "/subscriptions/c62138f4-4fe4-4dbf-92e7-9af5cbb89f3e/resourceGroups/rg1/providers/Microsoft.Storage/storageAccounts/rg1diag500"
+        },
+        "subnetName": {
+            "value": "Subnet"
+        },
+        "publicIpAddressName": {
+            "value": "oel74-m1-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Dynamic"
+        },
+        "publicIpAddressSku": {
+            "value": "Basic"
+        }
+    }
+}

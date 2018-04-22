@@ -1,0 +1,42 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "southeastasia"
+        },
+        "virtualMachineName": {
+            "value": "myoraclelinux74-12"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_F8s"
+        },
+        "adminUsername": {
+            "value": "kaix"
+        },
+        "virtualNetworkName": {
+            "value": "specializedVMVNET"
+        },
+        "networkInterfaceName": {
+            "value": "myoraclelinux74-12921"
+        },
+        "networkSecurityGroupName": {
+            "value": "myoraclelinux74-12-nsg"
+        },
+        "adminPublicKey": {
+            "value": "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAnikASdyLA6Ef2hxqxIWlVQTkDFYmKOUsZzz9e2LJsCCHQB059ba0ze2gPskOc0LKKH7EP3wQ14LmRSwSEjREGHUam4H/tYvj0/DCqrIASw9ZRMaQr6pSgbdiRWMcn5GRdMHE8eAnbltyMiosxDcrKKz1VDZEqV7AT7KdHkdcTnSox/9sJaGMVlAFAlwt0Xr7eVDYIsBBwcnl5ZERiUb9lePRm0mbpzdXb44Ty6RYRcO437845fzL2wbl2jM2UDxh0cygdcLV3xajwFuW4pE3+/jkAXtGWt+SPA2nVRveItCqBCMSYWmaYvge76esVwUC5FHnuV1ELNWEqqM8ioDbkQ=="
+        },
+        "subnetName": {
+            "value": "Subnet"
+        },
+        "publicIpAddressName": {
+            "value": "myoraclelinux74-12-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Dynamic"
+        },
+        "publicIpAddressSku": {
+            "value": "Basic"
+        }
+    }
+}
