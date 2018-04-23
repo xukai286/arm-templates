@@ -4,16 +4,16 @@
     "parameters": {
         "virtualMachines_mc_1_name": {
             "defaultValue": "mc-1",
-            "type": "String"
+            "type": "string"
         },
 
         "virtualNetworks_mc_vnet_name": {
             "defaultValue": "mc-vnet",
-            "type": "String"
+            "type": "string"
         },
         "networkInterfaces_mc_1354_name": {
             "defaultValue": "mc-1354",
-            "type": "String"
+            "type": "string"
         },
         "vmSize": {
             "defaultValue": "Standard_B1s",
@@ -21,21 +21,21 @@
         },
         "publicIPAddresses_mc_1_ip_name": {
             "defaultValue": "mc-1-ip",
-            "type": "String"
+            "type": "string"
         },
 
         "networkSecurityGroups_mc_nsg_name": {
             "defaultValue": "mc-nsg",
-            "type": "String"
+            "type": "string"
         },
         "subnets_default_name": {
             "defaultValue": "default",
-            "type": "String"
+            "type": "string"
         }
     },
     "variables": {
         "mclocation": "[resourceGroup().location]",
-        "mcnodename": "[concat(parameters('virtualMachines_mc_1_name'),'-',uniqueString(resourceGroup().id))]"
+        "mcnodename": "[concat(parameters('virtualMachines_mc_1_name'),'-',uniquestring(resourceGroup().id))]"
     },
     "resources": [
         {
