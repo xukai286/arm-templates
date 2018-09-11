@@ -1,0 +1,16 @@
+az login
+
+az group deployment create \
+    --name AlertDeployment \
+    --resource-group rg1 \
+    --template-file simplemetricalert.json \
+    --parameters @simplemetricalert.parameters.json
+
+
+
+Connect-AzureRmAccount
+
+Select-AzureRmSubscription -SubscriptionName <yourSubscriptionName>
+
+New-AzureRmResourceGroupDeployment -Name AlertDeployment -ResourceGroupName rg1 `
+  -TemplateFile simplemetricalert.json -TemplateParametersFile simplemetricalert.parameters.json

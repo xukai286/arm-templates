@@ -1,0 +1,38 @@
+{
+    "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "alertName": {
+            "value": "New Metric Alert Test"
+        },
+        "alertDescription": {
+            "value": "New metric alert created via template"
+        },
+        "alertSeverity": {
+            "value":3
+        },
+        "isEnabled": {
+            "value": true
+        },
+        "resourceId": {
+            "value": ["/subscriptions/c62138f4-4fe4-4dbf-92e7-9af5cbb89f3e/resourceGroups/mysql-mgr/providers/Microsoft.Compute/virtualMachines/mysql2",
+                     "/subscriptions/c62138f4-4fe4-4dbf-92e7-9af5cbb89f3e/resourceGroups/mysql-mgr/providers/Microsoft.Compute/virtualMachines/mysql1",
+                     "/subscriptions/c62138f4-4fe4-4dbf-92e7-9af5cbb89f3e/resourceGroups/mysql-mgr/providers/Microsoft.Compute/virtualMachines/mysql3"]
+        },
+        "metricName": {
+            "value": "Percentage CPU"
+        },
+        "operator": {
+          "value": "GreaterThan"
+        },
+        "threshold": {
+            "value": "5"
+        },
+        "timeAggregation": {
+            "value": "Average"
+        },
+        "actionGroupId": {
+            "value": "/subscriptions/c62138f4-4fe4-4dbf-92e7-9af5cbb89f3e/resourcegroups/default-activitylogalerts/providers/microsoft.insights/actiongroups/sms"
+        }
+    }
+}
