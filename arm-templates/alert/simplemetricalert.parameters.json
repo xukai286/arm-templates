@@ -15,9 +15,7 @@
             "value": true
         },
         "resourceId": {
-            "value": ["/subscriptions/c62138f4-4fe4-4dbf-92e7-9af5cbb89f3e/resourceGroups/mysql-mgr/providers/Microsoft.Compute/virtualMachines/mysql2",
-                     "/subscriptions/c62138f4-4fe4-4dbf-92e7-9af5cbb89f3e/resourceGroups/mysql-mgr/providers/Microsoft.Compute/virtualMachines/mysql1",
-                     "/subscriptions/c62138f4-4fe4-4dbf-92e7-9af5cbb89f3e/resourceGroups/mysql-mgr/providers/Microsoft.Compute/virtualMachines/mysql3"]
+            "value": "/subscriptions/c62138f4-4fe4-4dbf-92e7-9af5cbb89f3e/resourceGroups/rg1/providers/Microsoft.Compute/virtualMachines/ubuntu1"
         },
         "metricName": {
             "value": "Percentage CPU"

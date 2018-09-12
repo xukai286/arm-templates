@@ -38,7 +38,7 @@
             }
         },
         "resourceId": {
-            "type": "array",
+            "type": "string",
             "minLength": 1,
             "metadata": {
                 "description": "Full Resource ID of the resource emitting the metric that will be used for the comparison. For example /subscriptions/00000000-0000-0000-0000-0000-00000000/resourceGroups/ResourceGroupName/providers/Microsoft.compute/virtualMachines/VM_xyz"
@@ -120,7 +120,7 @@
                 "description": "[parameters('alertDescription')]",
                 "severity": "[parameters('alertSeverity')]",
                 "enabled": "[parameters('isEnabled')]",
-                "scopes": "[createArray(parameters('resourceId'))]",
+                "scopes": ["[parameters('resourceId')]"],
                 "evaluationFrequency":"[parameters('evaluationFrequency')]",
                 "windowSize": "[parameters('windowSize')]",
                 "criteria": {
