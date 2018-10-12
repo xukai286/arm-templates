@@ -1,0 +1,57 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "chinaeast2"
+        },
+        "virtualMachineName": {
+            "value": "abc"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_D4s_v3"
+        },
+        "adminUsername": {
+            "value": "kaix"
+        },
+        "virtualNetworkName": {
+            "value": "workspacesvnet556"
+        },
+        "networkInterfaceName": {
+            "value": "abc491"
+        },
+        "networkSecurityGroupName": {
+            "value": "abc-nsg"
+        },
+        "adminPassword": {
+            "value": null
+        },
+        "storageAccountName": {
+            "value": "workspacesdisks932"
+        },
+        "storageAccountType": {
+            "value": "Premium_LRS"
+        },
+        "addressPrefix": {
+            "value": "172.17.0.0/24"
+        },
+        "subnetName": {
+            "value": "default"
+        },
+        "subnetPrefix": {
+            "value": "172.17.0.0/24"
+        },
+        "publicIpAddressName": {
+            "value": "abc-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Dynamic"
+        },
+        "publicIpAddressSku": {
+            "value": "Basic"
+        },
+        "osDiskSize": {
+            "value": 200
+        }
+    }
+}
